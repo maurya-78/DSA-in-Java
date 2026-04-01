@@ -1,0 +1,28 @@
+package Basic_Sorting;
+
+public class SelectionSort {
+    public static void print(int[] arr){
+        for(int ele : arr){
+            System.out.print(ele+" ");
+        }
+        System.out.println();
+    }
+    public static void main(String[] args) {
+        int[] arr = {5,-2,6,7,2,0,7,3};
+        int n = arr.length;
+        for(int i=0;i<n;i++) {
+            int min = Integer.MIN_VALUE;
+            int minInx = -1;
+            for(int j=i;j<n;j++){
+                if(arr[j]>min){
+                    min = arr[j];
+                    minInx = j;
+                }
+            }
+            int temp = arr[i];
+            arr[i] = arr[minInx];
+            arr[minInx] = temp;
+        }
+        print(arr);
+    }
+}
