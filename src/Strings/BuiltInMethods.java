@@ -12,6 +12,7 @@ public class BuiltInMethods {
         System.out.println(s.contains("Rahul"));
         if(s.contains("ahul")){
             System.out.println(" K");
+            System.out.println(s.startsWith("hul"));
             System.out.println(s);
         }
     }
