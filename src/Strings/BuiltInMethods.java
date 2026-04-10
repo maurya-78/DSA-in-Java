@@ -14,6 +14,9 @@ public class BuiltInMethods {
             System.out.println(" K");
             System.out.println(s.startsWith("hul"));
             System.out.println(s);
+            String str = "798263";
+            int n = Integer.parseInt(str);
+            System.out.println(n+1);
         }
     }
 }
