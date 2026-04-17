@@ -20,7 +20,9 @@ public class ArrayLists {
 //            }
 //            System.out.println();
 //        }
-
+        arr.add(new ArrayList<>());
+        arr.get(arr.size()-1).add(10);
+        arr.get(arr.size()-1).add(20);
         for(ArrayList<Integer> List : arr){
             for(int ele : List){
                 System.out.print(ele+" ");
