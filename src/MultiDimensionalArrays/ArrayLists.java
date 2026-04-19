@@ -1,5 +1,5 @@
 package MultiDimensionalArrays;
-
+import java.util.List;
 import java.util.ArrayList;
 
 public class ArrayLists {
@@ -29,5 +29,19 @@ public class ArrayLists {
             }
             System.out.println();
         }
+    }
+    public List<List<Integer>> generate(int n){
+        List<List<Integer>> ans = new ArrayList<>();
+        for(int i=0;i<n;i++){
+            ans.add(new ArrayList<>());
+            for(int j=0;j<=i;j++){
+                if(j==0 || j==i) ans.get(i).set(j,i); //arr[i][j]=1
+                else{
+                    int val = ans.get(i-1).get(j)+ans.get(i-1).get(j);  // val = arr[i-1][j] + arr[i-1][j-1]
+                    ans.get(i).set(j,val);
+                }
+            }
+        }
+        return ans;
     }
 }
