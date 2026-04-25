@@ -29,7 +29,6 @@ public class UniquePaths {
         System.out.print("Enter the Column number n: ");
         int n = sc.nextInt();
         System.out.println("Unique paths is: " + UniquePaths.Solution.uniquePaths(m, n));
-
         sc.close();
     }
 }
