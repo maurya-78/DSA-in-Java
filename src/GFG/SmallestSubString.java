@@ -1,5 +1,4 @@
 package GFG;
-
 public class SmallestSubString{
     public static int smallestSubString(String s) {
         int[] count = new int[3];

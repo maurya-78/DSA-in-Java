@@ -24,7 +24,6 @@ public class CommonInThreeSortedArray {
         }
         return result;
     }
-
     public static void main(String[] args) {
 
         int[] a = {1, 5, 10, 20, 40, 80};
